@@ -1,0 +1,67 @@
+// script.js
+const earthFacts = {
+    "crust": {
+        "thickness": "5-70 km",
+        "temperature": "200-400°C",
+        "composition": "Mainly silicate rocks and minerals",
+        "state": "Solid",
+        "age": "Youngest layer, constantly being renewed",
+        "percentage": "Less than 1% of Earth's total mass",
+        "discovery": "First layer to be identified by scientists",
+        "subdivision": "Divided into oceanic and continental crust",
+        "density": "2.7-3.0 g/cm³",
+        "pressure": "0-3 GPa"
+    },
+    "mantle": {
+        "thickness": "2,900 km",
+        "temperature": "900-4,000°C",
+        "composition": "Iron and magnesium-rich silicate rocks",
+        "state": "Mostly solid but can flow slowly",
+        "volume": "84% of Earth's total volume",
+        "convection": "Drives plate tectonics",
+        "zones": "Upper and lower mantle regions",
+        "minerals": "Rich in olivine and pyroxene",
+        "density": "3.3-5.7 g/cm³",
+        "pressure": "3-136 GPa"
+    },
+    "outer_core": {
+        "thickness": "2,200 km",
+        "temperature": "4,000-5,000°C",
+        "composition": "Liquid iron and nickel",
+        "state": "Liquid",
+        "magnetic_field": "Generates Earth's magnetic field",
+        "motion": "Rotates faster than Earth's surface",
+        "pressure": "136-330 GPa",
+        "density": "9.9-12.2 g/cm³",
+        "discovery_date": "Identified in 1936",
+        "seismic": "Cannot transmit S-waves"
+    },
+    "inner_core": {
+        "thickness": "1,250 km",
+        "temperature": "5,400-6,100°C",
+        "composition": "Solid iron and nickel",
+        "state": "Solid",
+        "rotation": "Rotates slightly faster than the rest of Earth",
+        "pressure": "330-360 GPa",
+        "age": "Estimated 1-1.5 billion years old",
+        "density": "12.6-13.0 g/cm³",
+        "growth_rate": "Grows by about 1mm per year",
+        "discovery": "Discovered in 1936 by Inge Lehmann"
+    }
+};
+
+function showLayerFacts(layer) {
+    const layerName = layer.replace('_', ' ');
+    document.getElementById('layerName').textContent = 
+        `Earth's ${layerName.charAt(0).toUpperCase() + layerName.slice(1)}`;
+    
+    const facts = earthFacts[layer];
+    const factContent = document.getElementById('factContent');
+    factContent.innerHTML = '';
+    
+    for (const [property, value] of Object.entries(facts)) {
+        factContent.innerHTML += `
+            <p><strong>${property.charAt(0).toUpperCase() + property.slice(1).replace('_', ' ')}:</strong> ${value}</p>
+        `;
+    }
+}
