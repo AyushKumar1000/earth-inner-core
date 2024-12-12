@@ -1,22 +1,36 @@
-# Earth's Inner Secrets
-
-A simple, interactive web application that displays random fascinating facts about Earth's internal structure and composition.
+# Earth's Inner Secrets Dataset
 
 ## Description
+This dataset contains 20 fascinating scientific facts about Earth's internal structure, processes, and phenomena. The data is structured in JSON format and covers various categories including the Earth's core, magnetic field, geology, hydrology, and more.
 
-This single-page application presents users with interesting facts about Earth's core, mantle, and internal processes. Users can click a button to generate random facts, learning about our planet's lesser-known characteristics.
+## Data Structure
+The dataset is organized as a JSON object with the following structure:
+- `earthInnerSecrets`: Array of fact objects
+  - `id`: Unique identifier (1-20)
+  - `fact`: Detailed description of the Earth-related fact
+  - `category`: Classification of the fact (e.g., Core, Geology, Hydrology)
 
-## Features
+## Categories Covered
+- Core
+- Magnetic Field
+- Hydrology
+- Structure
+- Geology
+- Physics
+- Biology
+- Chemistry
+- Composition
+- Research
 
-- Clean, modern interface with gradient background
-- Random fact generation
-- Responsive design for mobile and desktop
-- Smooth transitions and hover effects
-- Collection of 20 scientifically accurate Earth facts
-
-## Installation
-
-1. Clone the repository
-```bash
-git clone [your-repository-url]
-
+## Usage
+The data can be loaded and parsed as a standard JSON file. Example:
+```json
+{
+  "earthInnerSecrets": [
+    {
+      "id": 1,
+      "fact": "...",
+      "category": "..."
+    }
+  ]
+}
