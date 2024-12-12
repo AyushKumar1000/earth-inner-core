@@ -1,53 +1,22 @@
-# Earth's Internal Structure Interactive Guide
+# Earth's Inner Secrets
 
-A simple, interactive web application that displays detailed information about Earth's internal layers: Crust, Mantle, Outer Core, and Inner Core.
+A simple, interactive web application that displays random fascinating facts about Earth's internal structure and composition.
+
+## Description
+
+This single-page application presents users with interesting facts about Earth's core, mantle, and internal processes. Users can click a button to generate random facts, learning about our planet's lesser-known characteristics.
 
 ## Features
 
-- Interactive buttons for each Earth layer
-- Detailed facts about each layer including:
-  - Thickness
-  - Temperature
-  - Composition
-  - Physical state
-  - Density
-  - Pressure
-  - Historical discoveries
-  - And more...
-
-## Project Structure
-
-
+- Clean, modern interface with gradient background
+- Random fact generation
+- Responsive design for mobile and desktop
+- Smooth transitions and hover effects
+- Collection of 20 scientifically accurate Earth facts
 
 ## Installation
 
-1. Clone or download this repository
-2. No additional dependencies required
-3. Open `index.html` in a web browser
+1. Clone the repository
+```bash
+git clone [your-repository-url]
 
-## Usage
-
-Simply click on any of the layer buttons (Crust, Mantle, Outer Core, Inner Core) to display detailed information about that particular layer of Earth's structure.
-
-## Technical Details
-
-- Built with vanilla JavaScript
-- Responsive design
-- Mobile-friendly interface
-- No external dependencies required
-
-## Browser Compatibility
-
-- Chrome
-- Firefox
-- Safari
-- Edge
-- Other modern browsers
-
-## License
-
-MIT License
-
-## Contributing
-
-Feel free to submit issues and enhancement requests.
